@@ -49,14 +49,14 @@ Unit.UI.attach = function(selectors, unit) {
 	window.addEvent('domready', function() {
 		if (typeof selectors === 'array' ||
 			typeof selectors === 'string') {
-			selectors = selectors.join(',');
-			document.getElements(selector).each(function(element) {
+			selectors = Array.from(selectors).join(',');
+			document.getElements(selectors).each(function(element) {
 				new unit(element);
 			});
 		} else {
-			new (selectors && typeof selectors === 'object' ? selector : unit)(window);
+			new (selectors && typeof selectors === 'function' ? selectors : unit)(window);
 		}
-	}
+	});
 };
 
 })();
