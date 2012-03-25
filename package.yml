@@ -1,0 +1,18 @@
+name: "Unit-UI"
+
+exports: "unit-ui.js"
+
+web: "[mootools.net](http://mootools.net)"
+
+description: ""
+
+license: "[MIT License](http://mootools.net/license.txt)"
+
+copyright: "&copy; Jean-Philippe Dery (jeanphilippe.dery@gmail.com)"
+
+authors: "Jean-Philippe Dery (jeanphilippe.dery@gmail.com)"
+
+sources:
+
+  - "Vendor/company/Source/Company.js"
+  - "Source/Unit/Unit.UI.js"

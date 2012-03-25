@@ -1,0 +1,6 @@
+[submodule "Packager"]
+	path = Packager
+	url = https://github.com/kamicane/packager.git
+[submodule "Vendor/company"]
+	path = Vendor/company
+	url = https://github.com/keeto/company.git
